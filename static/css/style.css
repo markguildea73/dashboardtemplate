@@ -1,0 +1,65 @@
+/*Page basic styles and grid layout*/
+
+.container {
+    border:0;
+    margin:0;
+    width:100%;
+
+}
+.line_graph {
+    background-color: #dcebf3;
+    height:300px;
+}
+
+.scatter_graph {
+    background-color: #f3e5dc;
+    height:300px;
+}
+.data_table {
+    background-color: #dcebf3;
+    height:300px;
+    overflow: scroll;
+}
+
+.average_temp {
+    background-color: #f3e5dc;
+    height:300px;
+    
+}
+
+
+
+table { 
+		width: 100%; 
+		border-collapse: collapse; 
+		overflow: scroll;
+	}
+	tr:nth-of-type(odd) { 
+		background: #eee; 
+	}
+	th { 
+		background: #333; 
+		color: white; 
+		font-weight: bold; 
+		cursor: s-resize;
+		background-repeat: no-repeat;
+        background-position: 3% center;
+	}
+	td, th { 
+		padding: 6px; 
+		border: 1px solid #ccc; 
+		text-align: left; 
+	}
+
+#aveData {
+    color:red;
+    height:50px;
+    display:none;
+    
+}
+
+#daySelector {
+    background-color:#dcebf3 ;
+    height:100px;
+    display:none;
+}
