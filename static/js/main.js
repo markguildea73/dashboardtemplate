@@ -214,10 +214,9 @@ queue()
     //     .group(group)
     //     .multiple(true)
     //     .controlsUseVisibility(true);
-    }
     
     
-    // trying to use the value accessor???
+    // trying to use the value accessor
     
     
     // function average_temp(ndx,reduceAdd,reduceRemove,reduceInitial){
