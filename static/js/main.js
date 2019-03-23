@@ -133,7 +133,7 @@ queue()
                 dc.scatterPlot(scatter)
                     .colors('yellow')
                     .group(temp_group_4, "temp4")
-                    .symbolSize(2)
+                    .symbolSize(5)
                     .clipPadding(10),
             ])
             .brushOn(false)
@@ -203,20 +203,17 @@ queue()
     });
     }
     
-    // day selector drop down
+    function day_Selector(ndx){
+    dim = ndx.dimension(dc.pluck("temp1"));
+    group = dim.group()
     
-    // function day_Selector(ndx){
-    // dim = ndx.dimension(dc.pluck("temp1"));
-    // group = dim.group()
+    dc.selectMenu(".average_temp")
+        .dimension(dim)
+        .group(group)
+        .multiple(true)
+        .controlsUseVisibility(true);
+    }
     
-    // dc.selectMenu(".average_temp")
-    //     .dimension(dim)
-    //     .group(group)
-    //     .multiple(true)
-    //     .controlsUseVisibility(true);
-    
-    
-    // trying to use the value accessor
     
     
     // function average_temp(ndx,reduceAdd,reduceRemove,reduceInitial){
